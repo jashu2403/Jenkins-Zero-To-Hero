@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'jashuuu/11:2'
+      image 'jashuuu/11:v3'
       args '-u root -v /var/run/docker.sock:/var/run/docker.sock -v /tmp:/tmp' // stable and grants access to host Docker
     }
   }
